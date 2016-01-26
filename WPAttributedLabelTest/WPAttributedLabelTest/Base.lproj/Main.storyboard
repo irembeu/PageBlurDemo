@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S99-9Z-RPg">
+                                <rect key="frame" x="50" y="105" width="500" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="A5l-xP-wnS"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lry-EX-Sal" customClass="WPHotspotLabel">
+                                <rect key="frame" x="50" y="385" width="500" height="100"/>
+                                <color key="backgroundColor" red="0.87707483670202901" green="0.93333333333333335" blue="0.912646632146767" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="1ud-lt-ifU"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b2h-xT-nrF">
+                                <rect key="frame" x="50" y="245" width="500" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="M1C-xf-xTe"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="S99-9Z-RPg" secondAttribute="trailing" constant="30" id="4sc-D8-iZs"/>
+                            <constraint firstItem="S99-9Z-RPg" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="30" id="7RG-e8-5T9"/>
+                            <constraint firstItem="Lry-EX-Sal" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="30" id="Jlf-SM-abs"/>
+                            <constraint firstItem="b2h-xT-nrF" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="30" id="Svy-bH-osJ"/>
+                            <constraint firstItem="Lry-EX-Sal" firstAttribute="top" secondItem="b2h-xT-nrF" secondAttribute="bottom" constant="40" id="e6b-JI-psp"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Lry-EX-Sal" secondAttribute="trailing" constant="30" id="eFh-7g-56h"/>
+                            <constraint firstItem="S99-9Z-RPg" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="85" id="l4c-bP-kWt"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="b2h-xT-nrF" secondAttribute="trailing" constant="30" id="qym-Q7-WaJ"/>
+                            <constraint firstItem="b2h-xT-nrF" firstAttribute="top" secondItem="S99-9Z-RPg" secondAttribute="bottom" constant="40" id="sMW-ce-rxQ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="labelOne" destination="S99-9Z-RPg" id="g2F-Ai-9Kw"/>
+                        <outlet property="labelThree" destination="Lry-EX-Sal" id="Rn6-UV-G0P"/>
+                        <outlet property="labelTwo" destination="b2h-xT-nrF" id="Luh-iB-o1l"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
